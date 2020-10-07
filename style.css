@@ -1,5 +1,5 @@
 *{
-    /* outline: 1px solid red;  */
+    outline: 1px solid red; 
 }
 body{
     margin: 0;
@@ -201,6 +201,7 @@ form.search-wrap{
 @media only screen and (max-width: 600px) {
     .topBanner{
         background-image: url(./assets/banner/cover-mobileview.jpg);
+        background-position: bottom;
     }
     .j-cover h2{
         font-size: 24px;
@@ -366,6 +367,9 @@ form.search-wrap{
     color: #fff;
     font-size: 16px;
     font-weight: 600;
+}
+.seeMore:focus{
+    outline: none;
 }
 
 /* //----responsiveness */
@@ -900,6 +904,7 @@ form.search-wrap{
     font-weight: 600;
     font-size: 18px;
     line-height: 23px;
+    box-shadow: none!important;
 }
 .sec-2 .btn-primary{
     border-color: #375232!important;
