@@ -767,6 +767,9 @@ form.search-wrap{
     padding-top: 14px;
     padding-bottom: 34px;
 }
+.contact-sec h5 span{
+    font-weight: 700;
+}
 .call.nav-link{
     border: 1px solid #375232;
     border-radius: 4px;
@@ -775,9 +778,8 @@ form.search-wrap{
     background-color: #375232;
     color: #fff;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     padding: .6rem 1rem;
-    text-transform: uppercase;
 }
 .call.nav-link{
     margin: auto;
@@ -788,6 +790,17 @@ form.search-wrap{
     .contact-sec{
         padding: 20px;
         padding-bottom: 32px;
+    }
+    .contact-sec h3{
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .contact-sec h5{
+        font-size: 12px;
+        line-height: 16px;
+        opacity: 0.7;
+        padding-top: 14px;
+        padding-bottom: 34px;
     }
 }
 
@@ -906,6 +919,7 @@ form.search-wrap{
         font-size: 14px;
         line-height: 18px;
         margin-bottom: 12px;
+        margin: auto;
     }
     .sec-2 .btn{
         width: 345px;
@@ -916,7 +930,7 @@ form.search-wrap{
     .sec-3{
         font-size: 12px!important;
         line-height: 15px;
-        text-align: left;
+        text-align: center;
         padding-bottom: 32px;
     }
     .sm-group{

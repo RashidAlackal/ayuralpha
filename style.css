@@ -391,7 +391,7 @@ form.search-wrap{
         color: #375232;
         font-size: 10px;
         font-weight: 600;
-        padding: .6rem 1rem;
+        padding: 0.9rem 0.8rem;
     }
     .star-1{
         display: block;
@@ -402,6 +402,8 @@ form.search-wrap{
     .pdset{
         margin-right: -7px!important;
         margin-left: -7px!important;
+        align-items: center;
+        justify-content: center;
     }
     .pdset .col-md-3{
         padding-right: 0px;
@@ -520,15 +522,21 @@ form.search-wrap{
     }
     .r1{
         padding-bottom: 15px;
+        margin-right: -10px;
+        margin-left: -10px;
     }
     .right-sec{
         padding-left: 0!important;
+        padding-right: 0px!important;
     }
     .mob{
         display: block;
     }
     .web{
         display: none;
+    }
+    .right-sec img{
+        margin: auto;
     }
 }
 
@@ -601,7 +609,7 @@ form.search-wrap{
     }
     .featuredBlog p{
         font-size: 14px;
-        padding-bottom: 16px;
+        padding-bottom: 0px;
     }
     .blogSection .card-body h5{
         font-size: 16px;
@@ -718,6 +726,9 @@ form.search-wrap{
         padding-left: 0px!important;
         margin-top: 24px;
     }
+    .location-img img{
+        margin: auto;
+    }
 }
 
 /* --------insta-post---------------------------------------------------------- */
@@ -766,6 +777,9 @@ form.search-wrap{
         padding-top: 36px;
         padding-bottom: 16px;
     }   
+    .post-slider{
+        text-align: center;
+    }
 }
   
   /*------------------------ Slider---------------------------- */
@@ -937,6 +951,7 @@ form.search-wrap{
         font-size: 14px;
         line-height: 18px;
         margin-bottom: 12px;
+        margin: auto;
     }
     .sec-2 .btn{
         width: 345px;
@@ -947,7 +962,7 @@ form.search-wrap{
     .sec-3{
         font-size: 12px!important;
         line-height: 15px;
-        text-align: left;
+        text-align: center;
         padding-bottom: 32px;
     }
     .sm-group{

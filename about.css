@@ -397,6 +397,7 @@ form.search-wrap{
         font-size: 14px;
         line-height: 18px;
         margin-bottom: 12px;
+        margin: auto;
     }
     .sec-2 .btn{
         width: 345px;
@@ -407,7 +408,7 @@ form.search-wrap{
     .sec-3{
         font-size: 12px!important;
         line-height: 15px;
-        text-align: left;
+        text-align: center;
         padding-bottom: 32px;
     }
     .sm-group{
