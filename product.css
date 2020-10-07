@@ -223,7 +223,7 @@ form.search-wrap{
     height: 270px;
     overflow: hidden;
 }
-.p-detail-sec p{
+.wei-qua p{
     font-weight: 600;
     font-size: 12px;
     line-height: 24px;
@@ -254,6 +254,10 @@ form.search-wrap{
 .bttn-group .btn.btn-secondary:focus{
     background-color: #375232!important;
     color: #fff!important;
+    box-shadow: none!important;
+}
+.bttn-group button:focus{
+    box-shadow: none!important;
 }
 
 /* --------- */
@@ -414,6 +418,7 @@ form.search-wrap{
         background-color: #53B42C;
         color: #fff;
         margin-bottom: 8px!important;
+        margin: auto;
     }
     .buy-now h6{
         font-size: 14px;
@@ -430,6 +435,7 @@ form.search-wrap{
         border: 2px solid #53B42C;
         background-color: #fff;
         color: #fff;
+        margin: auto;
     }
     .add-to-cart h6{
         font-size: 14px;

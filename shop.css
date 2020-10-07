@@ -236,6 +236,7 @@ form.search-wrap{
     padding-bottom: 10px;
     height: 444px;
     width: 255px;
+    margin: auto;
 }
 .pdset .card-body{
     text-align: left;
