@@ -689,6 +689,333 @@ form.search-wrap{
     }
 }
 
+/* ----------review video--------------------------------------------- */
+
+.review-video{
+    text-align: center;
+    background-color: #D8FFD1;
+    padding-bottom: 25px;
+}
+.review-video h3{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 0.2px;
+    color: #375232;
+}
+.review-video .sm-line{
+    width: 36px;
+    height: 0px;
+    border: 1px solid #375232;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.playButton{
+    left: 140px;
+    top: 95px;
+    position: absolute;
+}
+.review-video .video-creater{
+    position: absolute;
+    color: #fff;
+    left: 7px;
+    top: 220px
+}
+.review-video .card{
+    border: none;
+    background: none;
+}
+.review-video .card-body{
+    text-align: left;
+    padding: 0px;
+    padding-top: 15px;
+}
+.review-video span .fa-star{
+    font-size: 12px;
+    line-height: 14px;
+    color: #375232;
+    opacity: 0.7;
+}
+.review-video h5{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #375232;
+}
+.review-video .card-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #375232;
+    opacity: 0.7;
+}
+
+.submitVideo.nav-link{
+    border: 1px solid #375232;
+    width: 255px;
+    height: 42px;
+    background-color: #375232;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    margin: auto;
+    margin-top: 32px;
+}
+
+
+/* //----responsiveness */
+@media only screen and (max-width: 600px) {
+    .review-video{
+        overflow: hidden;
+    }
+    .review-video h3{
+        font-size: 24px;
+        line-height: 36px;
+        padding-top: 16px;
+    }
+    .review-video hr{
+        display: none;
+    }
+    .review-video .card{
+        width: 300px;
+    }
+    .review-video .row{
+        display: -webkit-inline-box;
+    }
+}
+
+
+
+/* ------------review------------------------------------------------------------------------- */
+
+.review{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 25px;
+}
+.review .row{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.review .col .progress{
+    margin: 5px;
+    width: 196px;
+    height: 20px;
+    background: #37523224;
+    border-radius: 0px;
+}
+.review .col .progress-bar{
+    background-color: #375232!important;
+}
+.progressBar{
+    text-align: right;
+}
+.progressBar li{
+    display: inline-flex;
+}
+.progressBar h5{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #375232;
+    opacity: 0.7;
+}
+.starRating span .fa-star{
+    font-size: 16px;
+    line-height: 19px;
+    color: #375232;
+    opacity: 0.7;
+}
+.starRating h3{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #375232;
+}
+.starRating h4{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #375232;
+    opacity: 0.9;
+}
+
+
+
+/* //----responsiveness */
+@media only screen and (max-width: 600px) {
+    .review .col .progress{
+        margin: 1px;
+        margin-left: 7px;
+        width: 90px;
+        height: 20px;
+    }
+    .progressBar ul{
+        padding-left: 0px;
+    }
+    .progressBar h5{
+        line-height: 20px;
+    }
+    .progressBar{
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+    }
+    .starRating .star-5{
+        display: block;
+    }
+    .starRating h3{
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .starRating h4{
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+
+/* -------- */
+
+.recentReview {
+    width: 784px;
+    margin: auto;
+    margin-bottom: 62px;
+    
+}
+.recentReview li{
+    display: flex;
+}
+.recentReview h3{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #375232;
+    padding: 16px;
+}
+.customerReview{
+    text-align: left;
+    width: 100%;
+}
+.customerReview span .fa-star{
+    font-size: 12px;
+    line-height: 14px;
+    color: #375232;
+    opacity: 0.7;
+}
+.customerReview h4{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #375232;
+}
+
+.user {
+    width:100%;
+    overflow: hidden;
+    /*border: 2px solid black;*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .score {
+    width: 45px;
+    height: 45px;
+    /*border: 2px solid black;*/
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 0px;
+    text-align: center;
+    color: #375232;
+    background-color: #37523224;
+    border-radius: 50%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+ .score p {
+    margin-top: 0;
+    margin-bottom: 0rem!important;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #375232;
+    opacity: 0.9;
+}
+  .name {
+    /*border: 1px solid black;*/
+    text-align: left;
+    margin-left: 56px;
+  }
+  
+  .date {
+    /*border: 1px solid black;*/
+    text-align: left;
+    margin-left: 56px;
+  }
+
+
+
+.customerReview h5{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #375232;
+}
+.customerReview h6{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #375232;
+    opacity: 0.9;
+}
+
+.write.nav-link{
+    border: 1px solid #375232;
+    width: 255px;
+    height: 42px;
+    background-color: #375232;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    margin: auto;
+}
+
+
+/* //----responsiveness */
+@media only screen and (max-width: 600px) {
+    .recentReview {
+        width: 100%;
+        margin-bottom: 62px;
+    }
+    .recentReview ul{
+        padding-left: 0px;
+    }
+    .recentReview h3{
+        font-size: 16px;
+        line-height: 20px;
+        padding: 14px;
+    }
+    .customerReview h4{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .customerReview h5{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+}
+
 
 /* ---------faq-------------------------------------------------------- */
 
@@ -786,7 +1113,7 @@ form.search-wrap{
     color: #fff;
     font-size: 16px;
     font-weight: 500;
-    padding: .6rem 1rem;
+    padding: .5rem 1rem;
 }
 .call.nav-link{
     margin: auto;

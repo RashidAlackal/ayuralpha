@@ -206,6 +206,7 @@ form.search-wrap{
     .location-Sec{
         padding: 16px;
         height: 100%;
+        padding-bottom: 0px;
     }
     .location-detail h5{
         font-size: 24px;
@@ -278,8 +279,11 @@ form.search-wrap{
     z-index: -1; */
 
     
-    
+    /* -------redesign----------------- */
 
+    .bgRedesign{
+        background-color: #D8FFD1;
+    }
 
 
 
@@ -370,9 +374,24 @@ form.search-wrap{
         padding-top: 20px;
         height: 100%;
     }
+    .reEmail{
+        padding-top: 20px;
+        height: 100%;
+    }
     .footer-sec .row{
         flex-direction: column-reverse;
         padding-left: 0px;
+    }
+    .reEmail .row{
+        flex-direction: column-reverse;
+        padding-left: 0px;
+    }
+    .reEmail .container{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .reEmail .sec-2 .form-control{
+        background-color: #fff;
     }
     .foot-left{
         text-align: center;
