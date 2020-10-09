@@ -64,14 +64,14 @@ a:hover{
     display: flex;
 }
 .navGp .nav-item a{
-    color: 375232;
+    color: #375232;
 }
 .navGp .active{
     /* width: 51px; */
     /* height: 22px; */
     background: #D8FFD1;
     border-radius: 5px;
-    color: 375232;
+    color: #375232;
 }
 
 /* -----search-------------- */
@@ -95,8 +95,20 @@ form.search-wrap{
     height: 21px;
 }
 
+
+/* //----responsiveness */
+@media only screen and (max-width: 1200px) {
+    .navBar .col-md-6{
+        flex: 0 0 55%!important;
+        max-width: 55%!important;
+    }
+}
+
+
+
 /* //----responsiveness */
 @media only screen and (max-width: 600px) {
+
     .topBar .row{
         height: 60px;
         font-size: 14px;
@@ -109,10 +121,14 @@ form.search-wrap{
     }
 
 
-    
-
     /* --navbar-- */
     
+    .topNav{
+        position: relative;
+    }
+    .navBar #menuBar{
+        margin: 5px;
+    }
     .navBar{
         height: 48px;
     }
@@ -126,14 +142,43 @@ form.search-wrap{
         width: 65.62px;
         height: 24px;
     }
-    .navGp, form.search-wrap{
+    form.search-wrap{
+        display: none;
+    }
+    .navBar .col-md-3 a{ 
         display: none;
     }
     
 
     /* --navbar-- */
 
-
+    /* responsive menu */
+    .navBar .navGp{
+        padding-left: 0px;
+        position: absolute;
+        top: 20px;
+    }
+    .navGp .active{
+        width: 192px;
+        height: 34px;
+        border-radius: 0px;
+    }
+    .navGp .nav-item a{
+        margin-left: 0px!important;
+        text-align: center;
+    }
+    .topNav{
+        height: 100%;
+        margin: auto;
+    }
+    .navGp{
+        padding-top: 0px;
+        display: block;
+        background: #fff;
+        width: 192px;
+        height: 250px;
+    }
+              
 
 }
 
@@ -147,6 +192,7 @@ form.search-wrap{
     background-repeat: no-repeat;
     background-image: url(assets/banner/Fina420l@2x.png);
     background-size: cover;
+    background-position-x: center;
     height: 90vh;
     overflow: hidden;
 }

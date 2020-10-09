@@ -45,6 +45,20 @@ a:hover{
     text-align: right;
 }
 
+/* //----responsiveness */
+@media only screen and (max-width: 600px) {
+    .topBar .row{
+        height: 60px;
+        font-size: 14px;
+    }
+    .topBar .tlicon{
+        height: 18px;
+    }
+    .topBar .toplinegp{
+        text-align: center;
+    }
+}
+    
 
 /* --------Navbar-------------------------------------------------------------- */
 
@@ -106,20 +120,30 @@ form.search-wrap{
 }
 
 /* //----responsiveness */
-@media only screen and (max-width: 600px) {
-    .topBar .row{
-        height: 60px;
-        font-size: 14px;
+@media only screen and (max-width: 1200px) {
+    .navBar .col-md-6{
+        flex: 0 0 55%!important;
+        max-width: 55%!important;
     }
-    .topBar .tlicon{
-        height: 18px;
-    }
-    .topBar .toplinegp{
-        text-align: center;
-    }
-
-
+}
     
+/* //----responsiveness */
+@media only screen and (max-width: 1000px) {
+    form.search-wrap{
+        display: none;
+    }
+    .navBar .col-md-6{
+        flex: 1 0 13%!important;
+        /* max-width: 13%!important; */
+    }
+    .col-md-3{
+        justify-content: flex-end!important;
+    }
+}
+
+
+/* //----responsiveness */
+@media only screen and (max-width: 600px) {
 
     /* --navbar-- */
     
@@ -771,6 +795,7 @@ form.search-wrap{
 @media only screen and (max-width: 600px) {
     .review-video{
         overflow: hidden;
+        height: 487px;
     }
     .review-video h3{
         font-size: 24px;
@@ -977,6 +1002,43 @@ form.search-wrap{
     color: #375232;
     opacity: 0.9;
 }
+
+.pageNumber{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+.pageNumber nav a{
+    border: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 2px;
+    padding: .1rem .1rem;
+    color: #375232;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+}
+.pageNumber nav a:hover{
+    color: #375232;
+}
+.pageNumber a:focus{
+    box-shadow: none;
+}
+.pageNumber nav .nxt-pre:hover{
+    background: none;
+    color: #375232;
+}
+.page-item.active .page-link {
+    color: #375232!important;
+    background-color: #e9ecef!important;
+    border-color: none!important;
+}
+
+
 
 .write.nav-link{
     border: 1px solid #375232;
