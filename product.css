@@ -126,8 +126,14 @@ form.search-wrap{
     .topBar .toplinegp{
         text-align: center;
     }
-    #menuBar{
+    #backarrow{
         display: block;
+        margin: 5px;
+        margin-top: 10px;
+        margin-left: 3px;
+    }
+    #menuBar{
+        display: none;
     }
     #gp-close{
         display: block;
@@ -255,7 +261,8 @@ form.search-wrap{
 /* --------product-detail--------------------------------------------------------------- */
 
 .p-detail-sec{
-    height: 700px;
+    /* height: 700px; */
+    height: 100%;
     padding: 50px;
 }
 .p-detail-sec .img-border{
@@ -434,6 +441,15 @@ form.search-wrap{
     line-height: 18px;
     letter-spacing: 0.3px;
     font-weight: 500;
+}
+
+
+
+/* //----responsiveness */
+@media only screen and (min-width: 600px) and (max-device-width: 1024px){
+    .product-head{
+        margin-top: 20px;
+    }
 }
 
 
@@ -644,7 +660,8 @@ form.search-wrap{
     background-color: #D8FFD1;
     text-align: center;
     padding: 93px;
-    height: 578px;
+    height: 100%;
+    /* height: 578px; */
 }
 .location-img{
     /* padding-right: 40px!important; */
@@ -875,10 +892,24 @@ form.search-wrap{
     margin: auto;
     margin-top: 32px;
 }
-
+.slick-prev:before{
+    content: url(assets/icon/arrow-left-circle.svg)!important;
+    left: -60px;
+}
+.slick-next:before{
+    content: url(assets/icon/next-arrow.svg)!important;
+}
+.slick-next{
+    top: 25%!important;
+    right: -20px!important;
+}
+ .slick-prev{
+    top: 25%!important;
+    left: -78px!important;
+}
 
 /* //----responsiveness */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     
     .review-video h3{
         font-size: 24px;
@@ -897,7 +928,12 @@ form.search-wrap{
     /* .review-video .card{
         width: 300px;
     } */
-
+    .slick-prev:before{
+        display: none;
+    }
+    .slick-next:before{
+        display: none;
+    }
 }
 
 
@@ -909,6 +945,7 @@ form.search-wrap{
     justify-content: center;
     margin: auto;
     padding-top: 25px;
+    overflow: hidden;
 }
 .review .row{
     text-align: center;
