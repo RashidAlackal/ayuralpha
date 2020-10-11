@@ -917,6 +917,12 @@ form.search-wrap{
     left: 40%;
     top: 38%;
 }
+.playButton{
+    outline: none;
+}
+.playButton img{
+    outline: none;
+}
 
 .video-sec{
     position: relative;
