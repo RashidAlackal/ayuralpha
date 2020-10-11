@@ -279,6 +279,70 @@ form.search-wrap{
     width: 349px;
     height: 390px;
 }
+/* ------------------------------------------------- */
+
+.p-detail-sec .thumbnail{
+    width: 65px;
+    height: 65px;
+    border: 1px solid #53B42C;
+    box-sizing: border-box;
+    border-radius: 5px;
+    overflow: hidden;
+    /* margin: auto; */
+    margin: 6px;
+}
+.p-detail-sec .thumbnails{
+    justify-content: center;
+    width: 350px;
+    margin: auto;
+    margin-top: 25px;
+}
+.p-detail-sec .thumbnail .thumbnail-image{
+    /* width: 65px; */
+    height: 60px;
+    /* height: 100%; */
+}
+
+
+
+.p-detail-sec .image-gallery {
+    /* margin: 0 auto;
+    display: table; */
+}
+.p-detail-sec .primary, .thumbnails {
+    display: flex;
+}
+.p-detail-sec .primary {
+    height: 100%;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* .p-detail-sec .thumbnail:hover .thumbnail-image, .selected .thumbnail-image {
+    border: 4px solid red;
+} */
+.p-detail-sec .thumbnail-image {
+    /* width: 100px; */
+    /* height: 100px; */
+    /* margin: 20px auto; */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 4px solid transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------- */
 .p-detail-sec .cb-detail{
     text-align: left;
 }
@@ -467,6 +531,21 @@ form.search-wrap{
         width: 254.81px;
         height: 250px;
     }
+    .p-detail-sec .thumbnail{
+        width: 40px;
+        height: 40px;
+    }
+    .p-detail-sec .thumbnails{
+        width: 310px;
+        margin-bottom: 10px;
+    }
+    .p-detail-sec .thumbnail .thumbnail-image{
+        /* height: 60px; */
+        height: 100%;
+    }
+
+
+
     .p-detail-sec .col{
         padding-left: 0px;
         padding-right: 0px;

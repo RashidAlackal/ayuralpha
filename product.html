@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="./product.css">
     
@@ -18,6 +18,13 @@
     <!-- slick-slider -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+
 
     <link rel="icon" type="" href="./assets/icon/favicon.png"/>
     <title>Ayuralpha</title>
@@ -111,10 +118,29 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <div class="img-border">
-                            <img src="./assets/product/product-MALT.svg" class="card-img-top pd-sz" alt="...">
+                        <div class="img-border image-gallery">
+
+                                <main class="primary" style="background-image: url('./assets/product/product-MALT.svg');"></main>
+                        
+                              </div>
+                              <div class="thumbnails">
+                                <a href="#" class="selected thumbnail" data-big="./assets/product/product-MALT.svg">
+                                  <div class="thumbnail-image" style="background-image: url(./assets/product/product-MALT.svg)"></div>
+                                </a>
+                                <a href="#" class="thumbnail" data-big="./assets/product/product-ASHWAGANDHA.svg">
+                                  <div class="thumbnail-image" style="background-image: url('./assets/product/product-ASHWAGANDHA.svg')"></div>
+                                </a>
+                                <a href="#" class="thumbnail" data-big="./assets/product/product-Ayur-face-wash.svg">
+                                  <div class="thumbnail-image" style="background-image: url('./assets/product/product-Ayur-face-wash.svg')"></div>
+                                </a>
+                                <a href="#" class="thumbnail" data-big="./assets/product/product-beard-oil.svg">
+                                  <div class="thumbnail-image" style="background-image: url('./assets/product/product-beard-oil.svg')"></div>
+                                </a>
+                              </div>
+
+
                         </div>
-                    </div>
+
                     <div class="col">
                         <div class="cb-detail">
                             <!-- <a href="./product.html"> -->
@@ -732,16 +758,21 @@
 
 
 
-<!-- <script>
-    $("#menuBar").click( function() {
-      $(".navGp").addClass("open");
-  });
+
+<!-- product image -->
   
-  $("#gp-close").click( function() {
-      $(".navGp").removeClass("open");
-  });
-  </script> -->
-  
+<script>
+
+$('.thumbnail').on('click', function() {
+  var clicked = $(this);
+  var newSelection = clicked.data('big');
+  var $img = $('.primary').css("background-image","url(" + newSelection + ")");
+  clicked.parent().find('.thumbnail').removeClass('selected');
+  clicked.addClass('selected');
+  $('.primary').empty().append($img.hide().fadeIn('slow'));
+});
+
+</script>
 
 <!-- ---counter----- -->
 <script>

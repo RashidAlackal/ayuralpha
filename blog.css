@@ -253,11 +253,30 @@ form.search-wrap{
 
 
 
+.blogPage{
+    height: 100vh;
+}
+
+.blogPage h2{
+    font-size: 47px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    padding-bottom: 40px;
+    color: #375232;
+    text-align: center;
+    margin: 30px;
+}
 
 
 
-
-
+/* //----responsiveness */
+@media only screen and (max-width: 600px) {
+    .blogPage h2{
+        font-size: 25px;
+        margin: 30px;
+    }
+}
 
 
 
