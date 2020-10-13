@@ -136,14 +136,36 @@ a:hover{
 /* -----search-------------- */
 
 form.search-wrap{
-    border: 1px solid;
+    /* border: 1px solid; */
     border-radius: 30px;
-    overflow: hidden;
+    position: relative;
+    overflow: visible;
     display: inline-flex;
 }
 .search-wrap input.form-control{
     border: none;
-    width: 100px;
+    position: absolute;
+    right:0;
+    width: 130px;
+    border: 0.5px solid rgba(55, 63, 65, 0.32);
+    border-radius: 50px;
+}
+.search-wrap{
+    margin: auto;
+}
+.search-wrap input.form-control:focus{
+    width: 200px;
+    transition: 0.5s ease;
+}
+.search-wrap .btn{
+    z-index: 2;
+    border: none
+}
+.search-wrap .btn:focus{
+    box-shadow: none!important;
+}
+.navBar.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(247, 52, 8, 0.25)!important;
 }
 /* -----search-------------- */
 .toplinegp a{
@@ -152,6 +174,10 @@ form.search-wrap{
 .tlicon{
     /* width: 24px; */
     height: 21px;
+}
+.right-items a{
+    margin: 0 32px!important;
+    /* margin: auto; */
 }
 
 

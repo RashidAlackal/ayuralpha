@@ -134,15 +134,38 @@ a:hover{
 /* -----search-------------- */
 
 form.search-wrap{
-    border: 1px solid;
+    /* border: 1px solid; */
     border-radius: 30px;
-    overflow: hidden;
+    position: relative;
+    overflow: visible;
     display: inline-flex;
 }
 .search-wrap input.form-control{
     border: none;
-    width: 100px;
+    position: absolute;
+    right:0;
+    width: 130px;
+    border: 0.5px solid rgba(55, 63, 65, 0.32);
+    border-radius: 50px;
 }
+.search-wrap{
+    margin: auto;
+}
+.search-wrap input.form-control:focus{
+    width: 200px;
+    transition: 0.5s ease;
+}
+.search-wrap .btn{
+    z-index: 2;
+    border: none
+}
+.search-wrap .btn:focus{
+    box-shadow: none!important;
+}
+.navBar.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(247, 52, 8, 0.25)!important;
+}
+
 /* -----search-------------- */
 .toplinegp a{
     padding-right: 15px;
@@ -150,6 +173,10 @@ form.search-wrap{
 .tlicon{
     /* width: 24px; */
     height: 21px;
+}
+.right-items a{
+    margin: 0 32px!important;
+    /* margin: auto; */
 }
 
 
@@ -374,26 +401,28 @@ form.search-wrap{
 }
 .dz-herb3{
     position: absolute;
-    left: 180px;
-    top: 737px;
+    /* left: 180px;
+    top: 737px; */
+    left: 13%;
+    top: 115%;
     opacity: 0.6;
 }
 .dz-herb4{
     position: absolute;
-    left: 1100px;
-    top: 448px;
+    right: 10%;
+    top: 68%;
     opacity: 0.6;
 }
 .dz-herb5{
     position: absolute;
-    left: 180px;
-    top: 1661px;
+    left: 14%;
+    top: 249%;
     opacity: 0.6;
 }
 .dz-herb6{
     position: absolute;
-    left: 1100px;
-    top: 1247px;
+    top: 190%;
+    right: 10%;
     opacity: 0.6;
 }
 
