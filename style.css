@@ -13,6 +13,47 @@ a:hover{
 }
 
 
+/* -------------------------------------------- */
+
+
+/* //----responsiveness */
+@media only screen and (min-width: 1100px) {
+.slidemove{
+    position: relative;
+    z-index: 1;
+}
+.slidemove:hover {
+	color: #375232 !important;
+	/* background-color: transparent; */
+	text-shadow: nthree;
+}
+.slidemove .insd:hover {
+	color: #375232 !important;
+	/* background-color: transparent; */
+	text-shadow: nthree;
+}
+.slidemove:hover:before {
+	left: 0% !important;
+	right: auto !important;
+	width: 100% !important;
+}
+.slidemove:before {
+	display: block !important;
+	position: absolute !important;
+	top: 0px !important;
+	right: 0px !important;
+	height: 100% !important;
+	width: 0px !important;
+	z-index: -1 !important;
+	content: '' !important;
+	color: #000 !important;
+    background: #fff;
+	transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1) !important;
+}
+}
+
+
+
 /* -----------------topBar----------------------------------------------------------- */
 
 
@@ -50,6 +91,7 @@ a:hover{
     box-shadow: 0px 4px 2px #99E08C;
     z-index: 100;
 }
+
 .topNav{
     height: 88px;
     margin: auto;
@@ -72,6 +114,13 @@ a:hover{
 .navGp .active{
     /* width: 51px; */
     /* height: 22px; */
+    background: #D8FFD1;
+    border-radius: 5px;
+    color: #375232;
+}
+
+.navGp .nav-link:hover{
+    border-radius: 0px;
     background: #D8FFD1;
     border-radius: 5px;
     color: #375232;
@@ -251,7 +300,8 @@ form.search-wrap{
     background-repeat: no-repeat;
     background-image: url(assets/banner/Fina420l.jpg);
     background-size: cover;
-    background-position-x: center;
+    background-position-x: right;
+    background-position-y: bottom;
     height: 90vh;
     overflow: hidden;
 }
@@ -298,9 +348,9 @@ form.search-wrap{
     line-height: 18px;
     letter-spacing: 0.3px;
 }
-.mainButton h6:hover{
+/* .mainButton h6:hover{
     color: #fff;
-}
+} */
 
 
 
@@ -444,9 +494,16 @@ form.search-wrap{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     padding-bottom: 10px;
+    height: 100%;
+    margin: auto;
 }
 .pdset .card-body{
     text-align: left;
+}
+.pdset .product-img{
+    max-height: 300px;
+    overflow: hidden;
+    height: 270px;
 }
 .pdset h5{
     font-size: 14px;
@@ -492,21 +549,36 @@ form.search-wrap{
     padding-bottom: 36px;
 }
 
-.seeMore{
-    width: 539px;
+a.seeMore{
+    position: relative;
+    z-index: 1;
+    max-width: 539px;
     height: 42px;
-    border: 1px solid #375232;
+    border: 2px solid #375232;
     border-radius: 0px;
     background-color: #375232;
-    margin-bottom: 36px;
+    margin-bottom: 36px!important;
     color: #fff;
     font-size: 16px;
     font-weight: 600;
+    display: block;
+    padding: 8px;
+    margin: auto;
 }
-.seeMore:focus{
+a.seeMore:focus{
     outline: none;
 }
 
+/* //----responsiveness */
+@media only screen and (min-width: 1100px) {
+    .prodt .nav-pills.bttn .nav-link:hover{
+        box-shadow: 0px 2px 6px rgba(168, 245, 154, 0.87);
+    }
+
+    .pdset .card:hover{
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
+    }
+}
 
 /* //----responsiveness */
 @media only screen and (max-width: 768px) {
@@ -566,6 +638,10 @@ form.search-wrap{
         font-size: 10px;
         font-weight: 700;
     }
+    .pdset .product-img{
+        width: 100%;
+        height: 100%
+    }
     .pdset h6{
         padding-top: 4px;
     }
@@ -576,6 +652,9 @@ form.search-wrap{
         width: 345px;
         height: 42px;
         margin-bottom: 30px;
+    }
+    a.seeMore:hover {
+        color: #ffffff!important;
     }
 }
 
@@ -647,6 +726,10 @@ form.search-wrap{
         font-weight: 400;
         line-height: 12px;
     }
+    .pdset .product-img{
+        width: 100%;
+        height: 100%
+    }
     .pdset span{
         font-size: 10px;
         font-weight: 700;
@@ -661,6 +744,9 @@ form.search-wrap{
         width: 345px;
         height: 42px;
         margin-bottom: 30px;
+    }
+    a.seeMore:hover {
+        color: #ffffff!important;
     }
 }
 
@@ -1263,7 +1349,8 @@ form.search-wrap{
     padding-bottom: 24px;
 }
 .sec-2 .form-control{
-    width: 399px;
+    max-width: 399px;
+    width: 100%;
     height: 64px;
     border: 1px solid #375232;
     border-radius: 4px;
@@ -1274,14 +1361,16 @@ form.search-wrap{
     color: #375232;
 }
 .sec-2 .btn{
-    width: 399px;
+    max-width: 399px;
+    width: 100%;
     height: 64px;
     background: #375232;
-    border-radius: #375232;
+    border-radius: 4px;
     font-weight: 600;
     font-size: 18px;
     line-height: 23px;
     box-shadow: none!important;
+    border: 1px solid #375232!important;
 }
 .sec-2 .btn-primary{
     border-color: #375232!important;
@@ -1290,6 +1379,7 @@ form.search-wrap{
     background-color: #375232!important;
     border-radius: 4px !important;
     border-color: #375232!important;
+    border: 1px solid #375232!important;
 }
 .sec-2 .btn-primary:focus{
     background-color: #375232!important;
@@ -1298,6 +1388,11 @@ form.search-wrap{
 .sec-3{
     width: 360px;
 }
+.footer-sec .sec-2 .slidemove:before{
+    background: #d8ffd1 !important;
+    /* border */
+}
+
 
 
 
@@ -1313,7 +1408,8 @@ form.search-wrap{
         padding-left: 0px;
     }
     .sec-2 .form-control{
-        width: 345px;
+        max-width: 345px;
+        width: 100%;
         height: 55px;
         font-size: 14px;
         line-height: 18px;
@@ -1321,7 +1417,8 @@ form.search-wrap{
         margin: auto;
     }
     .sec-2 .btn{
-        width: 345px;
+        max-width: 345px;
+        width: 100%;
         height: 55px;
         font-size: 16px;
         line-height: 20px;
@@ -1344,6 +1441,7 @@ form.search-wrap{
         margin-bottom: 30px;
     }
 }
+
 
 
 
@@ -1376,7 +1474,8 @@ form.search-wrap{
         padding-bottom: 8px;
     }
     .sec-2 .form-control{
-        width: 345px;
+        max-width: 345px;
+        width: 100%;
         height: 55px;
         font-size: 14px;
         line-height: 18px;
@@ -1384,7 +1483,8 @@ form.search-wrap{
         margin: auto;
     }
     .sec-2 .btn{
-        width: 345px;
+        max-width: 345px;
+        width: 100%;
         height: 55px;
         font-size: 16px;
         line-height: 20px;
@@ -1394,6 +1494,7 @@ form.search-wrap{
         line-height: 15px;
         text-align: center;
         padding-bottom: 32px;
+        width: 100%;
     }
     .sm-group{
         padding-top: 32px;
@@ -1404,4 +1505,5 @@ form.search-wrap{
         padding-right: 16px;
         padding-bottom: 32px;
     }
+
 }

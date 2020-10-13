@@ -18,6 +18,49 @@ a:hover{
 .web{
     display: block;
 }
+
+
+
+/* -------------------------------------------- */
+
+
+/* //----responsiveness */
+@media only screen and (min-width: 1100px) {
+.slidemove{
+    position: relative;
+    z-index: 1;
+}
+.slidemove:hover {
+	color: #375232 !important;
+	/* background-color: transparent; */
+	text-shadow: nthree;
+}
+.slidemove .insd:hover {
+	color: #375232 !important;
+	/* background-color: transparent; */
+	text-shadow: nthree;
+}
+.slidemove:hover:before {
+	left: 0% !important;
+	right: auto !important;
+	width: 100% !important;
+}
+.slidemove:before {
+	display: block !important;
+	position: absolute !important;
+	top: 0px !important;
+	right: 0px !important;
+	height: 100% !important;
+	width: 0px !important;
+	z-index: -1 !important;
+	content: '' !important;
+	color: #000 !important;
+    background: #fff;
+	transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1) !important;
+}
+}
+
+
 /* -----------------topBar----------------------------------------------------------- */
 
 
@@ -77,6 +120,12 @@ a:hover{
 .navGp .active{
     /* width: 51px; */
     /* height: 22px; */
+    background: #D8FFD1;
+    border-radius: 5px;
+    color: #375232;
+}
+.navGp .nav-link:hover{
+    border-radius: 0px;
     background: #D8FFD1;
     border-radius: 5px;
     color: #375232;
@@ -250,16 +299,16 @@ form.search-wrap{
 /* ---------navbar-end------------ */
 
 
-
 /* ----------shop--------------------------------------------------------------- */
 
+
 .product-sec{
-    /* height: 500px; */
     padding: 38px;
 }
-.product-sec hr{
-    margin-top: 0;
-}
+
+
+/* -----web filter section-start-- */
+
 .filter h6{
     font-weight: 700;
     font-size: 12px;
@@ -267,37 +316,40 @@ form.search-wrap{
     letter-spacing: 0.1px;
     color: #375232;
 }
-
+.product-sec hr{
+    margin-top: 0;
+}
 .product-sec .form-check{
     padding-left: 0px;
 }
-
 .checkLabel {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.1px;
-  color: #375232;
-}
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #375232;
+  }
 
 /* Hide the browser's default checkbox */
 .checkLabel input {
     position: absolute;
     opacity: 0;
+    left:0;
     cursor: pointer;
     height: 18px;
-    width: 18px;
+    width: 100%;
+    z-index: 10;
     
 }
 
@@ -315,7 +367,7 @@ form.search-wrap{
 
 /* On mouse-over, add a grey background color */
 .checkLabel:hover input ~ .checkmark {
-  background-color: #fff;
+  background-color: #cdcdcd;
 }
 
 /* When the checkbox is checked, add a blue background */
@@ -348,17 +400,14 @@ form.search-wrap{
   transform: rotate(45deg);
 }
 
+/* -----web filter section-end-- */
 
+/* ----web--sort--section---start---  */
 
 .product-list .top-function{
     display: flex;
     justify-content: space-between;
 }
-
-
-/* -------------------------------------------------- */
-
-
 .dropdown-Menu .input-group-text{
     border: none!important;
     background-color: #fff!important;
@@ -380,9 +429,6 @@ form.search-wrap{
 .btn-new{
     background-color: green!important;
 }
-.dropdown-Menu .dropdown-item:hover{
-    /* background-color: green!important; */
-}
 .product-list .dropdown-Menu .dropdown-item, .custom-select{
     font-weight: 600!important;
     font-size: 12px!important;
@@ -391,55 +437,16 @@ form.search-wrap{
     color: #375232!important;
 }
 
-
-
-
-/* .top-function .dropdown-menu a{
-    font-weight: 500!important;
-    font-size: 12px;
-    line-height: 24px;
-    letter-spacing: 0.1px;
-    color: #375232;
-}
-.top-function .btn-secondary{
-    background-color: white;
-    color: #375232;
-    border: 0px;
-    padding: 0px;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 24px;
-    letter-spacing: 0.1px;
-}
-.dropdown-menu .active{
-    background-color: #d8ffd1!important;
-}
-.top-function .btn-secondary:hover{
-    background-color: white;
-    color: #375232;
-}
-.top-function .btn-secondary:focus{
-    background-color: white;
-}
-.top-function .dropdown-menu{
-    transform: translate3d(-114px, 25px, 0px)!important;
-}
-.top-function .btn-secondary.dropdown-toggle {
-    color: #375232!important;
-    background-color: #fff!important;
-    border-color: #fff!important;
-}
-.top-function .btn-secondary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0rem rgba(255, 255, 255, 0.5)!important;
-} */
-
+/* mobsort-- */
 
 .sort-filter{
     display: none;
 }
 
+/* ----web--sort--section---end---  */
 
-/* product----- */
+
+/* product--start------------------------------------------------------ */
 
 .pdset .col{
     padding: 15px;
@@ -449,12 +456,23 @@ form.search-wrap{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     padding-bottom: 10px;
-    height: 444px;
-    width: 255px;
+    height: 100%;
+    /* height: 444px; */
+    /* width: 255px; */
     margin: auto;
 }
 .pdset .card-body{
     text-align: left;
+}
+.pdset .product-img{
+    max-height: 300px;
+    overflow: hidden;
+    height: 270px;
+}
+.pd-sz{
+    /* height: 17rem;   */
+    /* height: 270px; */
+    /* overflow: hidden; */
 }
 .pdset h5{
     font-size: 14px;
@@ -480,6 +498,13 @@ form.search-wrap{
     line-height: 18px;
     margin-bottom: 10px;
 }
+.fa-star{
+    color: rgb(255, 245, 0);
+    padding: 2px;
+}
+.star-1{
+    display: none;
+}
 .pdset h6{
     font-size: 14px;
     font-weight: 700;
@@ -489,22 +514,18 @@ form.search-wrap{
     padding-top: 10px;
     /* padding-bottom: 16px; */
 }
-.fa-star{
-    color: rgb(255, 245, 0);
-    padding: 2px;
-}
-.star-1{
-    display: none;
-}
-.pd-sz{
-    /* height: 17rem;   */
-    height: 270px;
-    overflow: hidden;
-}
+/* .add-to-cart span{
+    font-size: 14px;
+    font-weight: 700;
+    color: #199002;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+    padding-top: 10px;
+    padding-bottom: 16px;
+} */
 .add-to-cart{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-align: center;
     width: 225px;
     height: 30px;
     border: 1px solid #53B42C;
@@ -512,7 +533,7 @@ form.search-wrap{
     background-color: #53B42C;
     color: #53B42C;
 }
-.add-to-cart h6{
+.add-to-cart span{
     padding-left: 14px;
     color: #fff;
     font-size: 12px;
@@ -520,8 +541,11 @@ form.search-wrap{
     letter-spacing: 0.3px;
     font-weight: 500;
 }
+.pdset .card-footer{
+    padding: 0;
+}
 
-/* product----- */
+/* product---end----------------------------------------------------- */
 
 
 .page-count button{
@@ -585,9 +609,8 @@ form.search-wrap{
 }
 
 
-
 /* //----responsiveness */
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     .checkmark{
         width: 15px;
         height: 15px;
@@ -608,14 +631,15 @@ form.search-wrap{
         border: 2px solid white;
         border-width: 0 2px 2px 0;
     }
-}
+} */
 
 
 
 /* //----responsiveness */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .product-sec{
         padding-bottom: 0px;
+        padding-top: 0px;
     }
     .filter, .top-function, .line{
        display: none!important;
@@ -624,8 +648,40 @@ form.search-wrap{
         display: block;
         /* width: max-content; */
     }
-    .top-filter .row{
+    
+    /* ----------------- */
+
+
+
+    .sort-filter .sort-dropdown__current{
+        border: 1px solid #375232;
+        border-radius: 0;
+        width: 100%;
+        height: 50px;
+        color: #375232;
+        background-color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        padding: .6rem 1rem;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+    .sort-dropdown__text{
+        color: #375232;
+        background-color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        padding: .6rem 1rem;
+        margin: 0px;
+        
+    }
+    .sort-filter .sort-dropdown__item:hover{
+        background-color: #9cde90!important;
+        color: #375232!important;
+    }
+
     .top-filter .col-sm-6{
         padding-right: 0px!important;
         padding-left: 0px!important;
@@ -648,7 +704,6 @@ form.search-wrap{
         padding: .6rem 1rem;
         margin: 0px;
     }
-    
     .sort-filter .btn.btn-secondary:hover{
         background-color: #fff!important;
         color: #375232!important;
@@ -658,12 +713,9 @@ form.search-wrap{
         color: #375232!important;
         box-shadow: none!important;
     }
-
     .dropdown-item.active, .dropdown-item:active {
         color: #375232!important;
     }
-
-
 
     .sort-filter h6{
         font-weight: 600;
@@ -672,22 +724,23 @@ form.search-wrap{
         text-align: center;
         letter-spacing: 0.1px;
         color: #375232;
+        margin: 10px;
     }
-   .pdset .col{
+    .pdset .col{
         max-width: 50%;
         margin: auto;
         padding: 6px;
     }
-   .pdset .card{
-        height: 280px;
-        width: 166px;
+    .pdset .card{
+        /* height: 280px; */
+        /* width: 166px; */
     }
     .pdset .card-body{
         padding: 8px;
     }
     .pd-sz{
-        width: 160px!important;
-        height: 145px;
+        /* width: 160px!important; */
+        /* height: 145px; */
         overflow: hidden;
     }
     .pdset h5{
@@ -699,6 +752,9 @@ form.search-wrap{
         font-weight: 400;
         line-height: 12px;
         height: 24px;
+    }
+    .pdset .card-footer{
+        display: none;
     }
     .star-1{
         display: block;
@@ -715,6 +771,7 @@ form.search-wrap{
     }
     .product-list{
         padding-bottom: 24px;
+        margin: auto;
     }
     .add-to-cart{
         display: none;
@@ -726,15 +783,12 @@ form.search-wrap{
         margin-top: 40px;
         margin-bottom: -12px;
     }
-    
-    
+    .pdset .product-img{
+        width: 100%;
+        height: 100%
+    }
+
 }
-
-/* ------------------------------------------------- */
-
-
-
-/* ------------------------------------------------- */
 
 
 
@@ -783,7 +837,8 @@ form.search-wrap{
     padding-bottom: 24px;
 }
 .sec-2 .form-control{
-    width: 399px;
+    max-width: 399px;
+    width: 100%;
     height: 64px;
     border: 1px solid #375232;
     border-radius: 4px;
@@ -794,14 +849,16 @@ form.search-wrap{
     color: #375232;
 }
 .sec-2 .btn{
-    width: 399px;
+    max-width: 399px;
+    width: 100%;
     height: 64px;
     background: #375232;
-    border-radius: #375232;
+    border-radius: 4px;
     font-weight: 600;
     font-size: 18px;
     line-height: 23px;
     box-shadow: none!important;
+    border: 1px solid #375232!important;
 }
 .sec-2 .btn-primary{
     border-color: #375232!important;
@@ -818,7 +875,9 @@ form.search-wrap{
 .sec-3{
     width: 360px;
 }
-
+.footer-sec .sec-2 .slidemove:before{
+    background: #d8ffd1 !important;
+}
 
 
 
@@ -834,7 +893,8 @@ form.search-wrap{
         padding-left: 0px;
     }
     .sec-2 .form-control{
-        width: 345px;
+        max-width: 345px;
+        width: 100%;
         height: 55px;
         font-size: 14px;
         line-height: 18px;
@@ -842,7 +902,8 @@ form.search-wrap{
         margin: auto;
     }
     .sec-2 .btn{
-        width: 345px;
+        max-width: 345px;
+        width: 100%;
         height: 55px;
         font-size: 16px;
         line-height: 20px;
@@ -898,7 +959,8 @@ form.search-wrap{
         padding-bottom: 8px;
     }
     .sec-2 .form-control{
-        width: 345px;
+        max-width: 345px;
+        width: 100%;
         height: 55px;
         font-size: 14px;
         line-height: 18px;
@@ -906,7 +968,8 @@ form.search-wrap{
         margin: auto;
     }
     .sec-2 .btn{
-        width: 345px;
+        max-width: 345px;
+        width: 100%;
         height: 55px;
         font-size: 16px;
         line-height: 20px;
@@ -916,6 +979,7 @@ form.search-wrap{
         line-height: 15px;
         text-align: center;
         padding-bottom: 32px;
+        width: 100%;
     }
     .sm-group{
         padding-top: 32px;
@@ -938,6 +1002,15 @@ form.search-wrap{
         width: 50%;
     }
 }
+
+
+
+
+
+
+
+
+
 
 
 
