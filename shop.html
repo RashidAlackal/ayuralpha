@@ -109,31 +109,67 @@
                                 <ul>
                                     <li>
                                         <label class="checkLabel" for="defaultCheck1">Category 1
-                                            <input type="checkbox" id="defaultCheck1" value="" checked="checked">
+                                            <input type="checkbox" class="radio" value="1" name="fooby[1][]" id="defaultCheck1" value="" checked="checked">
                                             <span class="checkmark"></span>
                                           </label>
                                     </li>
                                     <li>
                                         <label class="checkLabel" for="defaultCheck2">Category 2
-                                            <input type="checkbox" id="defaultCheck2" value="">
+                                            <input type="checkbox" class="radio" value="1" name="fooby[1][]" id="defaultCheck2" value="">
                                             <span class="checkmark"></span>
                                           </label>
                                     </li>
                                     <li>
                                         <label class="checkLabel" for="defaultCheck3">Category 3
-                                            <input type="checkbox" id="defaultCheck3" value="">
+                                            <input type="checkbox" class="radio" value="1" name="fooby[1][]" id="defaultCheck3" value="">
                                             <span class="checkmark"></span>
                                           </label>
                                     </li>
                                     <li>
                                         <label class="checkLabel" for="defaultCheck4">Category 4
-                                            <input type="checkbox" id="defaultCheck4" value="">
+                                            <input type="checkbox" class="radio" value="1" name="fooby[1][]" id="defaultCheck4" value="">
                                             <span class="checkmark"></span>
                                           </label>
                                     </li>
                                     <li>
                                         <label class="checkLabel" for="defaultCheck5">Category 5
-                                            <input type="checkbox" id="defaultCheck5" value="">
+                                            <input type="checkbox" class="radio" value="1" name="fooby[1][]" id="defaultCheck5" value="">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+<!-- ------ -->
+
+                        <div class="col-xs-6 col-sm-6 sort-dropdown dropdown">
+                        <button class="btn btn-secondary " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="./assets/icon/sort.svg" alt="">
+                                Sort By
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <ul>
+                                    <li>
+                                        <label class="checkLabel" for="defaultCheck01">Featurd
+                                            <input type="checkbox" class="radio" value="1" name="fooby[2][]" id="defaultCheck01" value="" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkLabel" for="defaultCheck02">Best Selling
+                                            <input type="checkbox" class="radio" value="1" name="fooby[2][]" id="defaultCheck02" value="">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkLabel" for="defaultCheck03">Price--Low to High
+                                            <input type="checkbox" class="radio" value="1" name="fooby[2][]" id="defaultCheck03" value="">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkLabel" for="defaultCheck04">Price--High to Low
+                                            <input type="checkbox" class="radio" value="1" name="fooby[2][]" id="defaultCheck04" value="">
                                             <span class="checkmark"></span>
                                         </label>
                                     </li>
@@ -141,7 +177,9 @@
                             </div>
                         </div>
 
-                        <div class="col-xs-6 col-sm-6 sort-dropdown dropdown">
+
+
+                        <!-- <div class="col-xs-6 col-sm-6 sort-dropdown dropdown">
                             <div class="sort-dropdown__current js-dropdown">
                                 <img src="./assets/icon/sort.svg" alt="">
                                <h4 class="sort-dropdown__text">Sort By</h4>
@@ -155,7 +193,7 @@
                                <li class="sort-dropdown__item dropdown-item">Price--Low to High</li>
                                <li class="sort-dropdown__item dropdown-item">Price--High to Low</li>
                             </ul>
-                         </div>
+                         </div> -->
 
                     </div>
                     <h6>Showing<span>15</span> Products</h6>
@@ -178,35 +216,35 @@
 
                             <div>             
                                 <label class="checkLabel" for="defaultCheck1">Category 1
-                                    <input type="checkbox" id="defaultCheck1" value="" checked="checked">
+                                    <input type="checkbox" class="radio" value="1" name="fooby[1][]" id="defaultCheck1" value="" checked="checked">
                                     <span class="checkmark"></span>
                                   </label>
                             </div>
 
                             <div>             
                                 <label class="checkLabel" for="defaultCheck2">Category 2
-                                    <input type="checkbox" id="defaultCheck2" value="">
+                                    <input type="checkbox" class="radio" value="1" name="fooby[1][]" id="defaultCheck2" value="">
                                     <span class="checkmark"></span>
                                   </label>
                             </div>
 
                             <div>             
                                 <label class="checkLabel" for="defaultCheck3">Category 3
-                                    <input type="checkbox" id="defaultCheck3" value="">
+                                    <input type="checkbox" class="radio" value="1" name="fooby[1][]" id="defaultCheck3" value="">
                                     <span class="checkmark"></span>
                                   </label>
                             </div>
 
                             <div>             
                                 <label class="checkLabel" for="defaultCheck4">Category 4
-                                    <input type="checkbox" id="defaultCheck4" value="">
+                                    <input type="checkbox" class="radio" value="1" name="fooby[1][]" id="defaultCheck4" value="">
                                     <span class="checkmark"></span>
                                   </label>
                             </div>
 
                             <div>             
                                 <label class="checkLabel" for="defaultCheck5">Category 5
-                                    <input type="checkbox" id="defaultCheck5" value="">
+                                    <input type="checkbox" class="radio" value="1" name="fooby[1][]" id="defaultCheck5" value="">
                                     <span class="checkmark"></span>
                                   </label>
                             </div>
@@ -792,7 +830,7 @@
 
 <!-- mobile view sort -->
   
-<script>
+<!-- <script>
     function dropMenu() {
    $(this).toggleClass('is-active');
     $(this).siblings('.sort-dropdown__list').slideToggle(400);
@@ -808,11 +846,28 @@
 
     $('.js-dropdown').on('click', dropMenu);
     $('.sort-dropdown__item').on('click', changeText);
-</script>
+</script> -->
 
 
 <script>
 
+// the selector will match all input controls of type :checkbox
+// and attach a click event handler 
+$("input:checkbox").on('click', function() {
+  // in the handler, 'this' refers to the box clicked on
+  var $box = $(this);
+  if ($box.is(":checked")) {
+    // the name of the box is retrieved using the .attr() method
+    // as it is assumed and expected to be immutable
+    var group = "input:checkbox[name='" + $box.attr("name") + "']";
+    // the checked state of the group/box on the other hand will change
+    // and the current value is retrieved using .prop() method
+    $(group).prop("checked", false);
+    $box.prop("checked", true);
+  } else {
+    $box.prop("checked", false);
+  }
+});
 
 </script>
 

@@ -348,6 +348,9 @@ form.search-wrap{
 .product-sec .form-check{
     padding-left: 0px;
 }
+.dropdown-menu.show {
+    width: 100%;
+}
 .checkLabel {
     display: block;
     position: relative;
@@ -769,7 +772,8 @@ form.search-wrap{
         list-style: none;
         margin: auto;
         display: flex;
-        justify-content: center;
+        justify-content: left;
+        margin: 10px;
     }
     .sort-filter h6{
         font-weight: 600;
