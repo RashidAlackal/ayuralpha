@@ -346,6 +346,7 @@ form.search-wrap{
     position: absolute;
     opacity: 0;
     left:0;
+    top:0;
     cursor: pointer;
     height: 18px;
     width: 100%;
@@ -533,6 +534,9 @@ form.search-wrap{
     background-color: #53B42C;
     color: #53B42C;
 }
+.add-to-cart:hover{
+    background-color: #3c8120;
+}
 .add-to-cart span{
     padding-left: 14px;
     color: #fff;
@@ -543,6 +547,18 @@ form.search-wrap{
 }
 .pdset .card-footer{
     padding: 0;
+}
+
+
+/* //----responsiveness */
+@media only screen and (min-width: 1100px) {
+    .prodt .nav-pills.bttn .nav-link:hover{
+        box-shadow: 0px 2px 6px rgba(168, 245, 154, 0.87);
+    }
+
+    .pdset .card:hover{
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
+    }
 }
 
 /* product---end----------------------------------------------------- */
@@ -717,6 +733,17 @@ form.search-wrap{
         color: #375232!important;
     }
 
+    .sort-filter .dropdown-menu ul{
+        padding-left: 0;
+        margin: auto;
+        display: block;
+    }
+    .sort-filter .dropdown-menu li{
+        list-style: none;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
     .sort-filter h6{
         font-weight: 600;
         font-size: 14px;
