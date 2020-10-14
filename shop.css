@@ -311,7 +311,10 @@ form.search-wrap{
         height: 34px!important;
         opacity: 1!important;
     }
-    
+    .right-items a {
+        margin: 0 5px!important;
+        /* margin: auto; */
+    }
 
 }
 
