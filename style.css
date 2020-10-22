@@ -2621,10 +2621,15 @@ form.search-wrap{
 
 /* --------product-detail--------------------------------------------------------------- */
 
+#backarrow{
+    margin-top: 10px;
+}
+
 .product-pg.p-detail-sec{
     /* height: 700px; */
     height: 100%;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .product-pg.p-detail-sec .img-border{
     width: 350px;
