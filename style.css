@@ -143,7 +143,7 @@ form.search-wrap{
     position: absolute;
     right:0;
     width: 130px;
-    border: 0.5px solid rgba(55, 63, 65, 0.32);
+    border: 1px solid rgba(55, 63, 65, 0.32);
     border-radius: 50px;
 }
 .search-wrap{
