@@ -476,7 +476,7 @@ form.search-wrap{
 /* //----responsiveness */
 
 @media only screen and (max-width: 325px) {
-    .home-pg.srve .row .col{
+    .home-pg.srve .row .col.sm-4{
        padding-right: 0px!important;
        padding-left: 0px!important;
     }
