@@ -921,6 +921,9 @@ form.search-wrap{
  .home-pg.aboutSec{
       height: 100%!important;
 	}
+.home-pg .mob {
+    display: block;
+}
 }
 
 /* //----responsiveness */
