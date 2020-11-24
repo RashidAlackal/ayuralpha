@@ -1238,6 +1238,9 @@ form.search-wrap{
 .home-pg .wTime h5 {
     font-size: 13px!important;
 }
+.home-pg.location-Sec {
+    height: 581px;
+}
 }
 
 
