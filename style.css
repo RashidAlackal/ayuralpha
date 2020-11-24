@@ -734,6 +734,12 @@ form.search-wrap{
 
 
 /* //----responsiveness */
+
+@media only screen and (max-width: 325px){
+.home-pg .nav-pills.bttn .nav-link {
+    width: 90px;
+}
+
 @media only screen and (max-width: 600px) {
     .home-pg.prodt{
         padding-top: 16px;
