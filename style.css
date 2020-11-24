@@ -584,6 +584,7 @@ form.search-wrap{
 .home-pg .pd-sz{
     height: 17rem;  
     overflow: hidden;
+	width: 99%!important;
 }
 .home-pg .outline-prodt{
     padding-bottom: 36px;
