@@ -914,7 +914,13 @@ form.search-wrap{
     }
 }
 
-
+@media only screen and (max-width: 325px){
+.home-pg .about-Detail .row .col-md-6 {
+    width: 140px;
+}
+ .home-pg.aboutSec{
+      height: 100%;
+}
 
 /* //----responsiveness */
 @media only screen and (max-width: 600px) {
