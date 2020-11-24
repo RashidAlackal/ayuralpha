@@ -737,7 +737,8 @@ form.search-wrap{
 
 @media only screen and (max-width: 325px){
 .home-pg .nav-pills.bttn .nav-link {
-    width: 90px;
+    width: 90px!important;
+}
 }
 
 @media only screen and (max-width: 600px) {
