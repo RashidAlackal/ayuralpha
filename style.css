@@ -1233,10 +1233,10 @@ form.search-wrap{
 
 @media only screen and (max-width: 325px){
 .home-pg .wTime {
-    width: auto;
+    width: auto!important;
 }
 .home-pg .wTime h5 {
-    font-size: 13px;
+    font-size: 13px!important;
 }
 }
 
