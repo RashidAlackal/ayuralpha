@@ -474,6 +474,15 @@ form.search-wrap{
 
 
 /* //----responsiveness */
+
+@media only screen and (max-width: 325px) {
+    .home-pg.srve .row .col{
+       padding-right: 0px!important;
+       padding-left: 0px!important;
+    }
+    
+}
+
 @media only screen and (max-width: 600px) {
     .home-pg.srve{
         height: 90px;
