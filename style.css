@@ -1230,6 +1230,17 @@ form.search-wrap{
 
 
 /* //----responsiveness */
+
+@media only screen and (max-width: 325px){
+.home-pg .wTime {
+    width: auto;
+}
+.home-pg .wTime h5 {
+    font-size: 13px;
+}
+}
+
+
 @media only screen and (max-width: 600px) {
     .home-pg.location-Sec{
         padding: 20px;
